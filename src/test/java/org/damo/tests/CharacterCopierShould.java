@@ -48,7 +48,7 @@ public class CharacterCopierShould {
             DestinationSpy destinationSpy = new DestinationSpy();
             CharacterCopier copier=new CharacterCopier(sourceStub, destinationSpy);
             copier.copy();
-        } ).hasMessage("Source has no newline character");
+        } ).hasMessage("Validation failed");
     }
 
     @Test

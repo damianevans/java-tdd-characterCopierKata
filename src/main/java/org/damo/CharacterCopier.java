@@ -16,7 +16,7 @@ public class CharacterCopier {
 
     public void copy() throws Exception {
         if(!source.validate()) {
-            throw new Exception("Source has no newline character");
+            throw new Exception("Validation failed");
         }
 
         char c = source.getChar();
